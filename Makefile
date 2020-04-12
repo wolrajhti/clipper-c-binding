@@ -8,8 +8,8 @@ EXE = clipper-binding.exe
 dll: $(DLL)
 
 $(DLL) :
-	gcc -c -DBUILDING_CLIPPER_BINDING ./sources/clipper-binding.cpp
-	gcc -m32 -shared -o $@ clipper-binding.o
+	g++ -m32 -c -DBUILDING_CLIPPER_BINDING ./sources/clipper-binding.cpp
+	g++ -m32 -shared -o $@ clipper-binding.o
 
 exe : $(EXE)
 
