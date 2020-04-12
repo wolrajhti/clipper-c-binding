@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "clipper-binding.h"
+#include "../includes/clipper-binding.h"
 
 int main(void)
 {
