@@ -1,3 +1,5 @@
+local fortytwo = require('binding')
+
 local WORLD = love.physics.newWorld()
 local BODY = love.physics.newBody(WORLD, 0, 0, 'dynamic')
 local SHAPE = love.physics.newRectangleShape(100, 50)

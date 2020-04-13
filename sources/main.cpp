@@ -4,8 +4,13 @@
 
 int main(void)
 {
-  ClipperLib::IntPoint pt = ClipperLib::IntPoint(1, 2);
+  // testing lua api
+  lua_State *state = luaL_newstate();
+  printf("%p\n", luaopen_clipper(state));
+  // testing other functions
   printf("%d\n", fortytwo());
+  // testing clipper functions
+  ClipperLib::IntPoint pt = ClipperLib::IntPoint(1, 2);
   printf("%d\n", pt.X);
   printf("%d\n", pt.Y);
   return 0;

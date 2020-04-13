@@ -1,6 +1,8 @@
 #ifndef __CLIPPER_BINDING_H
 #define __CLIPPER_BINDING_H
 
+#include "../lua-5.3.5/src/lua.hpp"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -12,6 +14,8 @@ extern "C" {
 #endif
 
 int CLIPPER_BINDING fortytwo();
+int wrap_fortytwo(lua_State *L);
+int CLIPPER_BINDING luaopen_clipper(lua_State *L);
 
 #ifdef __cplusplus
 }
