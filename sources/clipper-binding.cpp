@@ -10,7 +10,7 @@ int wrap_fortytwo(lua_State *L) {
   return 1;
 }
 
-extern "C" int luaopen_clipper(lua_State *L) {
+extern "C" int luaopen_binding(lua_State *L) {
   lua_pushcfunction(L, wrap_fortytwo);
   return 1;
 }

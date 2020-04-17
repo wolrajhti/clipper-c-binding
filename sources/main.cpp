@@ -6,7 +6,7 @@ int main(void)
 {
   // testing lua api
   lua_State *state = luaL_newstate();
-  printf("%p\n", luaopen_clipper(state));
+  printf("%p\n", luaopen_binding(state));
   // testing other functions
   printf("%d\n", fortytwo());
   // testing clipper functions

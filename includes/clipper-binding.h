@@ -15,7 +15,7 @@ extern "C" {
 
 int CLIPPER_BINDING fortytwo();
 int wrap_fortytwo(lua_State *L);
-int CLIPPER_BINDING luaopen_clipper(lua_State *L);
+int CLIPPER_BINDING luaopen_binding(lua_State *L);
 
 #ifdef __cplusplus
 }
